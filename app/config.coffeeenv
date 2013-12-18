@@ -1,0 +1,7 @@
+# https://github.com/rcs/jsenv-brunch
+
+(env) ->
+  if env.PRODUCTION
+    { api_url: "http://example.com" }
+  else
+    { api_url: "http://localhost:3000" }
