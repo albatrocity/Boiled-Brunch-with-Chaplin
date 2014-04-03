@@ -4,7 +4,7 @@ module.exports = class Controller extends Chaplin.Controller
   # Compositions persist stuff between controllers.
   # You may also persist models etc.
   beforeAction: ->
-    @compose 'site', SiteView
+    @reuse 'site', SiteView
   initialize: ->
     super
     @current_user = Chaplin.mediator.user
